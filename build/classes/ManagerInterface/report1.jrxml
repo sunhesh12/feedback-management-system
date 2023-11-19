@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cfee8819-6412-4cd5-bf33-e10e88cf9df0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="25"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM CUSTOMER_FEEDBACK]]>
+	</queryString>
+	<field name="CUSTOMER_FEEDBACK_ID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DATE" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CUSTOMER_RATING" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COMMENT" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="TYPE" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="CUSTOMER_ID" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="13" width="555" height="39" uuid="da0af24a-26ff-40c9-8fe9-22bbe73137db"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FEEDBACK MANAGEMENT SYSYTEM]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="147" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="195" height="29" uuid="227c5b3c-b4e3-40e3-badf-fb924f17ad34"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[CUSTOMER FEEDBACK ID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="221" y="0" width="334" height="29" uuid="19a3b12c-1d09-4fea-9d55-4dfdeedad582"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CUSTOMER_FEEDBACK_ID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="58" width="195" height="29" uuid="f060fc89-f3ca-4229-9341-dad434a363cd"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[COMMENT]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="221" y="58" width="334" height="29" uuid="9cc272b0-995f-4eb3-a30d-3d59cd1fcd84"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COMMENT}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="87" width="195" height="29" uuid="6c3a5cc5-6001-43af-bba8-ea82fffbd0ed"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[TYPE]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="221" y="87" width="334" height="29" uuid="db814034-4a67-4a82-9f73-30e35328b19a"/>
+				<textFieldExpression><![CDATA[$F{TYPE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="29" width="195" height="29" uuid="ba1a6438-d35f-4bb2-a7f1-be2159b61cd7"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[CUSTOMER REACTION]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="221" y="29" width="334" height="29" uuid="3f0f3520-1684-42c6-87ef-e8bfecd7144c"/>
+				<textFieldExpression><![CDATA[$F{CUSTOMER_RATING}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
